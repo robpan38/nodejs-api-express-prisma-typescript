@@ -1,0 +1,38 @@
+{
+  "name": "nodejs-api-express-prisma-typescript",
+  "version": "1.0.0",
+  "description": "simple nodejs api using express, prisma and typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/src/index.js",
+    "dev": "tsc-watch --onSuccess \"node ./dist/src/index.js\"",
+    "seed": "ts-node prisma/seed.ts",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robpan38/nodejs-api-express-prisma-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robpan38/nodejs-api-express-prisma-typescript/issues"
+  },
+  "homepage": "https://github.com/robpan38/nodejs-api-express-prisma-typescript#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.15",
+    "@types/node": "^18.11.18",
+    "prisma": "^4.8.0",
+    "ts-node": "^10.9.1",
+    "tsc-watch": "^6.0.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.8.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "pg": "^8.8.0"
+  }
+}
